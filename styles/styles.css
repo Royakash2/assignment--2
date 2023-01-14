@@ -65,7 +65,7 @@ header {
     margin: 33px 0;
 }
 
-.btn {
+.banner-btn, .list-btn {
     background-color: #FF900E;
     border: none;
     border-radius: 5px;
@@ -122,7 +122,7 @@ color: #FF900E;
 
 .list-discription {
     font-weight: 200;
-    font-size: 12px;
+    font-size: 10px;
     color: #727272;
     margin: 30px 0;
 }
