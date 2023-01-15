@@ -22,7 +22,6 @@ header {
     width: 100%;
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 28px;
     height: 80px;
 
 }
@@ -66,7 +65,8 @@ header {
 }
 
 .banner-btn,
-.list-btn, .btn-primary {
+.list-btn,
+.btn-primary {
     background-color: #FF900E;
     border: none;
     border-radius: 5px;
@@ -78,7 +78,7 @@ header {
     text-align: center;
     width: 100%;
     max-width: 1140px;
-    height: 500px;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 30px;
@@ -246,6 +246,9 @@ header {
 /* --------------sponspors styles start------------ */
 .sponspors-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sponspors-info {
@@ -289,7 +292,7 @@ header {
 
 /* ------Extra section-------- */
 .footer-container {
-    background-color:darkslateblue ;
+    background-color: darkslateblue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
@@ -297,21 +300,43 @@ header {
     padding: 40px;
     color: #FFF4E7;
 }
-.footer-info{
+
+.footer-info {
     font-size: 12px;
     margin: 10px 0;
 }
-.contact-us{
+
+.contact-us {
     margin-bottom: 10px;
 }
 
-.footer-container form .mt{
+.footer-container form .mt {
     padding: 10px;
-    background-color:aqua;
+    background-color: aqua;
 }
+
+
 /* ---------extra section styles end---------  */
 
 /* --------smaller divice styles------- */
 @media screen and (max-width: 576px) {
-    
+
+    .nav-bar ul,
+    .features-list-container,
+    .counter-box-container,
+    .sponspors-logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .list-image-container,
+    .experiences-container,
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        margin: 0;
+    }
+
 }
