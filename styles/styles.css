@@ -213,11 +213,11 @@ header {
 
 /* conter box styles */
 .counter-box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 100px;
 }
 
 .counter-box {
@@ -267,8 +267,9 @@ header {
 }
 
 .sponspors-logo {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
     padding: 10px 90px;
 }
 
@@ -318,25 +319,34 @@ header {
 
 /* ---------extra section styles end---------  */
 
-/* --------smaller divice styles------- */
-@media screen and (max-width: 576px) {
+/* --------smaller divice responsive styles------- */
+@media screen and (max-width: 686px) {
 
     .nav-bar ul,
-    .features-list-container,
-    .counter-box-container,
-    .sponspors-logo {
-        flex-direction: column;
-        gap: 5px;
-    }
+    .features-list-container
+    {
+    flex-direction: column;
+    gap: 5px;
+}
 
-    .list-image-container,
-    .experiences-container,
-    .footer-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.list-image-container,
+.experiences-container,
+.footer-container {
+    grid-template-columns: repeat(1, 1fr);
+}
 
-    .footer {
-        margin: 0;
-    }
+.counter-box-container  {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    padding: 0 5px;
+}
+.sponspors-logo{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+.footer {
+    margin: 0;
+}
 
 }
