@@ -284,6 +284,7 @@ header {
 /* --------footer styles--------- */
 .footer {
     background-color: #FFF4E7;
+    border-radius: 8px;
     margin: 40px 240px;
     text-align: center;
     padding: 50px;
@@ -336,11 +337,13 @@ header {
     column-gap: 10px;
 }
 
-
 .counter-box-container  {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 15px;
     padding: 0 5px;
+}
+.experience-sub-info{
+    height: auto;
 }
 .sponspors-logo{
     grid-template-columns: repeat(3, 1fr);
