@@ -333,7 +333,9 @@ header {
 .experiences-container,
 .footer-container {
     grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
 }
+
 
 .counter-box-container  {
     grid-template-columns: repeat(2, 1fr);
