@@ -65,7 +65,8 @@ header {
     margin: 33px 0;
 }
 
-.banner-btn, .list-btn {
+.banner-btn,
+.list-btn, .btn-primary {
     background-color: #FF900E;
     border: none;
     border-radius: 5px;
@@ -75,7 +76,8 @@ header {
 
 .banner-image img {
     text-align: center;
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
     height: 500px;
     border-radius: 8px;
     object-fit: cover;
@@ -84,9 +86,9 @@ header {
 
 /* -----banner styles end------- */
 
-/* ---------featured list styles start -------- */
+/* ---------features list styles start -------- */
 
-.featured-list-container {
+.features-list-container {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -113,17 +115,203 @@ header {
     font-weight: 500;
     font-size: 35px;
 }
-.quick-color{
+
+.quick-color {
     color: #727272;
 }
-.featured-color{
-color: #FF900E;
+
+.features-color {
+    color: #FF900E;
 }
 
-.list-discription {
+.list-discription,
+.sub-discription {
     font-weight: 200;
     font-size: 10px;
     color: #727272;
     margin: 30px 0;
 }
-/* ---------featured list styles end -------- */
+
+/* ---------features list styles end -------- */
+
+/* ------------experience styles start ---------- */
+.experiences-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 100px;
+    column-gap: 50px;
+}
+
+.experience-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.exp-discription {
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 24px;
+    margin-bottom: 30px;
+}
+
+.experience-image {
+    width: 100%;
+    max-width: 800px;
+    height: 859px;
+}
+
+.experience-image img {
+    width: 100%;
+    max-width: 608px;
+    height: 782px;
+    object-fit: cover;
+}
+
+.experience-sub-info {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    height: 120px;
+    text-align: left;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+.sub-title {
+    font-weight: 100px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.experience-years {
+    position: relative;
+    top: -80px;
+    left: -20px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* ------------experience styles end---------- */
+
+/* ---------fact styles start------------- */
+.fact-container {
+    text-align: left;
+    width: 50%;
+    margin: 30px 80px;
+}
+
+.fact-text {
+    margin-top: 20px;
+}
+
+/* ------------fact styles end---------- */
+
+/* conter box styles */
+.counter-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.counter-box {
+    border: 1px solid #FF900E;
+    padding: 60px;
+    border-radius: 8px;
+}
+
+.counter-box:hover {
+    background-color: #FF900E;
+    transform: rotate(30deg);
+    transition: 2s ease-in-out;
+}
+
+.counter {
+    margin: 10px 0;
+}
+
+.pt {
+    font-size: 40px;
+}
+
+/* ----------counter box section end---------- */
+
+
+/* --------------sponspors styles start------------ */
+.sponspors-container {
+    text-align: center;
+}
+
+.sponspors-info {
+    padding: 40px 0;
+    margin: 0 410px;
+}
+
+.sponspors-title {
+    font-size: 45px;
+}
+
+.sponspors-discription {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #727272;
+}
+
+.sponspors-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 90px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 106px;
+    height: 30px;
+}
+
+/* ----sponspors styles end--------- */
+
+/* --------footer styles--------- */
+.footer {
+    background-color: #FFF4E7;
+    margin: 40px 240px;
+    text-align: center;
+    padding: 50px;
+}
+
+/* ---------------footer end------------- */
+
+/* ------Extra section-------- */
+.footer-container {
+    background-color:darkslateblue ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    text-align: center;
+    padding: 40px;
+    color: #FFF4E7;
+}
+.footer-info{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.contact-us{
+    margin-bottom: 10px;
+}
+
+.footer-container form .mt{
+    padding: 10px;
+    background-color:aqua;
+}
+/* ---------extra section styles end---------  */
+
+/* --------smaller divice styles------- */
+@media screen and (max-width: 576px) {
+    
+}
