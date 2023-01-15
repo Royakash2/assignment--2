@@ -227,9 +227,10 @@ header {
 }
 
 .counter-box:hover {
-    background-color: #FF900E;
+    background-color: #58631b69;
     transform: rotate(30deg);
     transition: 2s ease-in-out;
+    color: #FFFFFF;
 }
 
 .counter {
